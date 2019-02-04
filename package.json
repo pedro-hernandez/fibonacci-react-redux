@@ -1,19 +1,16 @@
 {
   "name": "fibonacci-react-redux",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
@@ -22,6 +19,21 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  }
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "terser": "^3.14.1",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedro-hernandez/fibonacci-react-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pedro-hernandez/fibonacci-react-redux/issues"
+  },
+  "homepage": "https://github.com/pedro-hernandez/fibonacci-react-redux#readme",
+  "description": ""
 }
