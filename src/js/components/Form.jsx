@@ -19,7 +19,7 @@ class ConnectedForm extends Component {
         super();
 
         this.state = {
-            fibPosition: 0
+            fibPosition: 1
         };
 
         // this.handleChange = this.handleChange.bind(this);
@@ -43,17 +43,20 @@ class ConnectedForm extends Component {
     render() {
         const { fibPosition } = this.state;
         return (
-            < form onSubmit={this.handleSubmit} >
-                <label htmlFor="number">Number</label>
+            <form className="form" onSubmit={this.handleSubmit} >
+                <label htmlFor="number">Position: </label>
                 <input
                     type="number"
                     id="fibPosition"
+                    min="1"
                     value={fibPosition}
                     onChange={this.handleChange}
                 />
-                <button type="submit">
-                    Get Number
-            </button>
+                <div className="button-wrapper">
+                    <button type="submit">
+                        Get Number
+                    </button>
+                </div>
             </form >
         );
     }

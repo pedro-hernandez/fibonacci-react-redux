@@ -1,0 +1,79 @@
+$colors: (
+    primary-background: #ee9716,
+    title: #4216ee,
+    input-border: #ee6216,
+    button-background: #eece16,
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+$fonts: (
+    title: 'Lobster',
+    instructions: 'Roboto'
+);
+
+@function font($font-name){
+    @return map-get($fonts, $font-name)
+};
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: color(primary-background);
+}
+
+h1 {
+    font-family: font(title);
+    font-size: 8em;
+    color: color(title);
+    text-align: center;
+}
+
+.instructions {
+    width: 60%;
+    margin: 0 auto;
+    font-family: font(instructions);
+    font-size: 1.4em;
+}
+
+.form {
+    // display: flex;
+    // flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    font-family: font(instructions);
+    font-size: 2em;
+    text-align: center;
+
+    input {
+        width: 200px;
+        height: 40px;
+        padding: 10px;
+        font-size: 1.4em;
+        text-align: center;
+        border: 2px solid color(input-border);
+        border-radius: 2px;
+    }
+    
+    button {
+        margin: 20px auto;
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        font-size: 0.6em;
+        background: color(button-background);
+        border: 2px solid color(input-border);
+        border-radius: 2px;
+    }
+}
+
+.results {
+    width: 60%;
+    margin: 0 auto;
+    font-family: font(instructions);
+    font-size: 2em;
+    text-align: center;
+}
+

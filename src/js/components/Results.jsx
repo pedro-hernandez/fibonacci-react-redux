@@ -9,8 +9,10 @@ const mapStateToProps = state => {
 
 const ConnectedResults = ({ fibPosition, result }) => (
     <Fragment>
-        <p>Result: {result}</p>
-        <p>Position: {fibPosition}</p>
+        <div className="results">
+            <p>Result: {result}</p>
+            <p>Position: {fibPosition}</p>
+        </div>
     </Fragment>
 )
 
